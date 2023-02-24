@@ -1,13 +1,21 @@
 body {
-  display: flex;
+  /* display:flex; */
   justify-content: center;
   align-items: center;
   gap: 15px;
   flex-direction: column;
   height: 100vh;
+  background-image: url("1215957.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.body{
+  width: 500px;
+  clear: both;
 }
 #form {
-  background-color: powderblue;
+  mix-blend-mode: lighten;
+  color: aliceblue;
   justify-content: center;
   display: inline-block;
   cursor: pointer;
@@ -17,7 +25,7 @@ body {
   box-sizing: content-box;
 }
 .button {
-  color: white;
+  /* color: white; */
   text-align: center;
   padding: 5px;
   margin: 5px;
@@ -25,10 +33,25 @@ body {
   justify-content: center;
 }
 .button1 {
-  background-color: green;
-  color: whitesmoke;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, white, black, black);
+  color: black;
+  cursor: pointer;
+  margin: 10px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .button1:hover {
-  background-color: black;
-  color: white;
+  background-image: linear-gradient(to right, red, white, white);
+  box-shadow: 0 5px 15px rgba(88, 88, 88, 0.4);
 }
